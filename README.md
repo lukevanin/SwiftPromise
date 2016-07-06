@@ -6,33 +6,34 @@ Example:
 
 ```
 func zen() -> Promise<String> {
-// Create a future.
-let f = Future<String>()
 
-// Do some asynchronous work.
-let url = URL(string: "https://api.github.com/zen")!
+    // Create a future.
+    let f = Future<String>()
 
-let task = URLSession.shared().dataTask(with: url) { data, response, error in
+    // Do some asynchronous work.
+    let url = URL(string: "https://api.github.com/zen")!
 
-// Resolve the future with a value or error.
-if let data = data {
-let value = String(data: data, encoding: String.Encoding.utf8)
-f.resolve(value: value!)
-}
-else {
-f.resolve(error: error!)
-}
-}
+    let task = URLSession.shared().dataTask(with: url) { data, response, error in
 
-task.resume()
+        // Resolve the future with a value or error.
+        if let data = data {
+            let value = String(data: data, encoding: String.Encoding.utf8)
+            f.resolve(value: value!)
+        }
+        else {
+            f.resolve(error: error!)
+        }
+    }
 
-// Create the promise.
-return f.promise()
+    task.resume()
+
+    // Create the promise.
+    return f.promise()
 }
 
 // Handle the result.
 zen().map() {
-print("Done: \($0)")
+    print("Done: \($0)")
 }
 ```
 
