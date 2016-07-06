@@ -10,6 +10,11 @@
 		A30A211E1D2C51AD001F7EB5 /* SwiftPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = A30A211D1D2C51AD001F7EB5 /* SwiftPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A30A21251D2C51AD001F7EB5 /* SwiftPromise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A30A211A1D2C51AD001F7EB5 /* SwiftPromise.framework */; };
 		A30A212A1D2C51AD001F7EB5 /* SwiftPromiseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30A21291D2C51AD001F7EB5 /* SwiftPromiseTests.swift */; };
+		A3FBC43F1D2C560700453601 /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FBC43E1D2C560700453601 /* Promise.swift */; };
+		A3FBC4411D2C561300453601 /* Future.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FBC4401D2C561300453601 /* Future.swift */; };
+		A3FBC4431D2C561C00453601 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FBC4421D2C561C00453601 /* Result.swift */; };
+		A3FBC4451D2C572000453601 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FBC4441D2C572000453601 /* Queue.swift */; };
+		A3FBC4471D2C582600453601 /* CancellationToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FBC4461D2C582600453601 /* CancellationToken.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +34,13 @@
 		A30A21241D2C51AD001F7EB5 /* SwiftPromiseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftPromiseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A30A21291D2C51AD001F7EB5 /* SwiftPromiseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPromiseTests.swift; sourceTree = "<group>"; };
 		A30A212B1D2C51AD001F7EB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3BA99CB1D2C7DDC004A4E9F /* SwiftPromisePlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftPromisePlayground.playground; sourceTree = "<group>"; };
+		A3FBC43E1D2C560700453601 /* Promise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Promise.swift; sourceTree = "<group>"; };
+		A3FBC4401D2C561300453601 /* Future.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Future.swift; sourceTree = "<group>"; };
+		A3FBC4421D2C561C00453601 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		A3FBC4441D2C572000453601 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		A3FBC4461D2C582600453601 /* CancellationToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancellationToken.swift; sourceTree = "<group>"; };
+		A3FBC44A1D2C7A7400453601 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +65,7 @@
 		A30A21101D2C51AD001F7EB5 = {
 			isa = PBXGroup;
 			children = (
+				A3BA99CB1D2C7DDC004A4E9F /* SwiftPromisePlayground.playground */,
 				A30A211C1D2C51AD001F7EB5 /* SwiftPromise */,
 				A30A21281D2C51AD001F7EB5 /* SwiftPromiseTests */,
 				A30A211B1D2C51AD001F7EB5 /* Products */,
@@ -71,8 +84,9 @@
 		A30A211C1D2C51AD001F7EB5 /* SwiftPromise */ = {
 			isa = PBXGroup;
 			children = (
-				A30A211D1D2C51AD001F7EB5 /* SwiftPromise.h */,
-				A30A211F1D2C51AD001F7EB5 /* Info.plist */,
+				A3FBC4481D2C733100453601 /* Source */,
+				A3FBC4491D2C733600453601 /* Supporting Files */,
+				A3FBC44A1D2C7A7400453601 /* README */,
 			);
 			path = SwiftPromise;
 			sourceTree = "<group>";
@@ -84,6 +98,27 @@
 				A30A212B1D2C51AD001F7EB5 /* Info.plist */,
 			);
 			path = SwiftPromiseTests;
+			sourceTree = "<group>";
+		};
+		A3FBC4481D2C733100453601 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A3FBC4401D2C561300453601 /* Future.swift */,
+				A3FBC43E1D2C560700453601 /* Promise.swift */,
+				A3FBC4421D2C561C00453601 /* Result.swift */,
+				A3FBC4441D2C572000453601 /* Queue.swift */,
+				A3FBC4461D2C582600453601 /* CancellationToken.swift */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		A3FBC4491D2C733600453601 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A30A211D1D2C51AD001F7EB5 /* SwiftPromise.h */,
+				A30A211F1D2C51AD001F7EB5 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +185,7 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = DBK476475Y;
 						DevelopmentTeamName = "Luke Van In";
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					A30A21231D2C51AD001F7EB5 = {
@@ -200,6 +236,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3FBC4431D2C561C00453601 /* Result.swift in Sources */,
+				A3FBC4411D2C561300453601 /* Future.swift in Sources */,
+				A3FBC43F1D2C560700453601 /* Promise.swift in Sources */,
+				A3FBC4471D2C582600453601 /* CancellationToken.swift in Sources */,
+				A3FBC4451D2C572000453601 /* Queue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,16 +361,20 @@
 		A30A212F1D2C51AD001F7EB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SwiftPromise/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lukevanin.SwiftPromise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -337,12 +382,15 @@
 		A30A21301D2C51AD001F7EB5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SwiftPromise/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lukevanin.SwiftPromise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -392,6 +440,7 @@
 				A30A21301D2C51AD001F7EB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A30A21311D2C51AD001F7EB5 /* Build configuration list for PBXNativeTarget "SwiftPromiseTests" */ = {
 			isa = XCConfigurationList;
@@ -400,6 +449,7 @@
 				A30A21331D2C51AD001F7EB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
