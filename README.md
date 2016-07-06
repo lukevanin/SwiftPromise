@@ -2,6 +2,10 @@
 
 Micro framework for using [Futures and Promises][1] in Swift.
 
+More examples and documentation coming soon. Check out `Promise.swift` and the playground example to get started.
+
+Pull requests welcome.
+
 Example:
 
 ```
