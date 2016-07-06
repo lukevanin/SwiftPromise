@@ -40,7 +40,7 @@
 		A3FBC4421D2C561C00453601 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		A3FBC4441D2C572000453601 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		A3FBC4461D2C582600453601 /* CancellationToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancellationToken.swift; sourceTree = "<group>"; };
-		A3FBC44A1D2C7A7400453601 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = SOURCE_ROOT; };
+		A3FBC44A1D2C7A7400453601 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +86,7 @@
 			children = (
 				A3FBC4481D2C733100453601 /* Source */,
 				A3FBC4491D2C733600453601 /* Supporting Files */,
-				A3FBC44A1D2C7A7400453601 /* README */,
+				A3FBC44A1D2C7A7400453601 /* README.md */,
 			);
 			path = SwiftPromise;
 			sourceTree = "<group>";
